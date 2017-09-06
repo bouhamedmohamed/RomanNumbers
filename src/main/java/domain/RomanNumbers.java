@@ -26,6 +26,11 @@ public enum RomanNumbers {
         public String getSymbole() {
             return "L";
         }
+    }, CENT("100") {
+        @Override
+        public String getSymbole() {
+            return "C";
+        }
     };
 
     private String romanSymbol;

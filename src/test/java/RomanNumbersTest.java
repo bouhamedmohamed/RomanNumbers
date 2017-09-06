@@ -32,4 +32,9 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("L", romanNumbersConvertor.convertNumber(50));
     }
+    @Test
+    public void should_return_C_when_input100() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("C", romanNumbersConvertor.convertNumber(100));
+    }
 }
