@@ -32,4 +32,9 @@ public enum RomanNumbers {
         final Optional<RomanNumbers> romanNumber = Arrays.stream(RomanNumbers.values()).filter(numberRomainExist).findAny();
         return romanNumber.get();
     }
+    public static boolean romanNumberExist(int number)
+    {
+        final Predicate<RomanNumbers> numberRomainExist = romainNumber -> romainNumber.romanSymbol.equals(String.valueOf(number));
+        return Arrays.stream(RomanNumbers.values()).filter(numberRomainExist).findAny().isPresent();
+    }
 }

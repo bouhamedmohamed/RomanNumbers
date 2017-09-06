@@ -14,4 +14,10 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("V", romanNumbersConvertor.convertNumber(5));
     }
+
+    @Test
+    public void should_return_empty_when_input0() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("", romanNumbersConvertor.convertNumber(0));
+    }
 }
