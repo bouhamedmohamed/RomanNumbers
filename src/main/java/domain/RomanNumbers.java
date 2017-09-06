@@ -16,6 +16,11 @@ public enum RomanNumbers {
         public String getSymbole() {
             return "V";
         }
+    }, DIX("10") {
+        @Override
+        public String getSymbole() {
+            return "X";
+        }
     };
 
     private String romanSymbol;

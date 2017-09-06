@@ -20,4 +20,10 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("", romanNumbersConvertor.convertNumber(0));
     }
+
+    @Test
+    public void should_return_X_when_input10() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("X", romanNumbersConvertor.convertNumber(10));
+    }
 }
