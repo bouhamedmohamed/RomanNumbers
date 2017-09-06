@@ -26,4 +26,10 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("X", romanNumbersConvertor.convertNumber(10));
     }
+
+    @Test
+    public void should_return_L_when_input50() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("L", romanNumbersConvertor.convertNumber(50));
+    }
 }

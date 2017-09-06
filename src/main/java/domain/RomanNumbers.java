@@ -21,6 +21,11 @@ public enum RomanNumbers {
         public String getSymbole() {
             return "X";
         }
+    }, CINQT("50") {
+        @Override
+        public String getSymbole() {
+            return "L";
+        }
     };
 
     private String romanSymbol;
