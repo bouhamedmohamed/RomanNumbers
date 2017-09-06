@@ -8,4 +8,10 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("I", romanNumbersConvertor.convertNumber(1));
     }
+
+    @Test
+    public void should_return_V_when_input5() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("V", romanNumbersConvertor.convertNumber(5));
+    }
 }

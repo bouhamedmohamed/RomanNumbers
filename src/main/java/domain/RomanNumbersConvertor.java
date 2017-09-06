@@ -1,7 +1,7 @@
 package domain;
 
 public class RomanNumbersConvertor {
-    public String convertNumber(int i) {
-        return "I";
+    public String convertNumber(int amount) {
+        return RomanNumbers.getRomanNumber(amount).getSymbole();
     }
 }
