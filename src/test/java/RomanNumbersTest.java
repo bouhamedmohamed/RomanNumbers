@@ -80,4 +80,9 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("CLVI", romanNumbersConvertor.convertNumber(156));
     }
+    @Test
+    public void should_return_MDLXVIII_when_input1568() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("MDLXVIII", romanNumbersConvertor.convertNumber(1568));
+    }
 }
