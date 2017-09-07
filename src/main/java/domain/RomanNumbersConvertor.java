@@ -11,6 +11,21 @@ public class RomanNumbersConvertor {
     }
 
     private String getRomanNumber(int number) {
-        return "II";
+        if (number == 0)
+            return "";
+        else {
+            final RomanNumbers closestNumber = findClosestRomanNumber(number);
+            final int difference = Math.abs(number - closestNumber.getNumber());
+            return getRomanNumber(difference) + closestNumber.getSymbole();
+        }
     }
+
+
+    public RomanNumbers findClosestRomanNumber(int number) {
+
+        return RomanNumbers.values()[0];
+
+    }
+
+
 }

@@ -53,4 +53,10 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("II", romanNumbersConvertor.convertNumber(2));
     }
+
+    @Test
+    public void should_return_II_when_input3() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("III", romanNumbersConvertor.convertNumber(3));
+    }
 }
