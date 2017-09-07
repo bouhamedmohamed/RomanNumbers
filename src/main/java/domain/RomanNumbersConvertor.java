@@ -16,15 +16,22 @@ public class RomanNumbersConvertor {
         else {
             final RomanNumbers closestNumber = findClosestRomanNumber(number);
             final int difference = Math.abs(number - closestNumber.getNumber());
-            return getRomanNumber(difference) + closestNumber.getSymbole();
+            return  closestNumber.getSymbole()+getRomanNumber(difference);
         }
     }
 
 
     public RomanNumbers findClosestRomanNumber(int number) {
-
-        return RomanNumbers.values()[0];
-
+        final RomanNumbers[] numbers = RomanNumbers.values();
+        RomanNumbers closestNumber = numbers[0];
+        int minDifference = Math.abs(number - closestNumber.getNumber());
+        for (int indice = 1; indice < numbers.length; indice++) {
+            if (Math.abs(number - numbers[indice].getNumber()) < minDifference) {
+                minDifference = Math.abs(number - numbers[indice].getNumber());
+                closestNumber = numbers[indice];
+            }
+        }
+        return closestNumber;
     }
 
 

@@ -59,4 +59,9 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("III", romanNumbersConvertor.convertNumber(3));
     }
+    @Test
+    public void should_return_VI_when_input6() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("VI", romanNumbersConvertor.convertNumber(6));
+    }
 }
