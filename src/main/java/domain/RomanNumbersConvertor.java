@@ -3,11 +3,8 @@ package domain;
 public class RomanNumbersConvertor {
     public String convertNumber(int number) {
         String convertedSymbol = "";
-        if (RomanNumbers.romanNumberExist(number))
-            convertedSymbol = RomanNumbers.getRomanNumber(number).getSymbole();
-        else
-            return getRomanNumber(number);
-        return convertedSymbol;
+        return getRomanNumber(number);
+
     }
 
     private String getRomanNumber(int number) {
@@ -37,11 +34,11 @@ public class RomanNumbersConvertor {
         final RomanNumbers[] numbers = RomanNumbers.values();
         RomanNumbers closestNumber = numbers[0];
         int minDifference = Math.abs(number - closestNumber.getNumber());
-        for (int indice = 1; indice < numbers.length; indice++) {
-            int difference = calculDifference(getDifference(number, numbers[indice]));
+        for (RomanNumbers romanNumber : RomanNumbers.values()) {
+            int difference = calculDifference(getDifference(number, romanNumber));
             if (difference < minDifference) {
-                minDifference = Math.abs(number - numbers[indice].getNumber());
-                closestNumber = numbers[indice];
+                minDifference = Math.abs(number - romanNumber.getNumber());
+                closestNumber = romanNumber;
             }
         }
         return closestNumber;
