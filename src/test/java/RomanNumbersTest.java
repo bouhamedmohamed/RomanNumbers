@@ -47,4 +47,10 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("M", romanNumbersConvertor.convertNumber(1000));
     }
+
+    @Test
+    public void should_return_II_when_input2() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("II", romanNumbersConvertor.convertNumber(2));
+    }
 }
