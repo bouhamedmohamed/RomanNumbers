@@ -37,4 +37,9 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("C", romanNumbersConvertor.convertNumber(100));
     }
+    @Test
+    public void should_return_D_when_input500() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("D", romanNumbersConvertor.convertNumber(500));
+    }
 }
