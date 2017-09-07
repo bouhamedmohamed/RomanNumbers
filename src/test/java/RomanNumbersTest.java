@@ -42,4 +42,9 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("D", romanNumbersConvertor.convertNumber(500));
     }
+    @Test
+    public void should_return_M_when_input1000() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("M", romanNumbersConvertor.convertNumber(1000));
+    }
 }

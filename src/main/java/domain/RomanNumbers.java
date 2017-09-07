@@ -36,6 +36,11 @@ public enum RomanNumbers {
         public String getSymbole() {
             return "D";
         }
+    }, MILL(1000) {
+        @Override
+        public String getSymbole() {
+            return "M";
+        }
     };
 
     private int number;
