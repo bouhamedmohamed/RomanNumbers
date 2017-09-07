@@ -74,4 +74,10 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("IV", romanNumbersConvertor.convertNumber(4));
     }
+
+    @Test
+    public void should_return_CLVI_when_input156() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("CLVI", romanNumbersConvertor.convertNumber(156));
+    }
 }
