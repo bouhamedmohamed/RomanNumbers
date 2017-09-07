@@ -32,16 +32,19 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("L", romanNumbersConvertor.convertNumber(50));
     }
+
     @Test
     public void should_return_C_when_input100() throws Exception {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("C", romanNumbersConvertor.convertNumber(100));
     }
+
     @Test
     public void should_return_D_when_input500() throws Exception {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("D", romanNumbersConvertor.convertNumber(500));
     }
+
     @Test
     public void should_return_M_when_input1000() throws Exception {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
@@ -59,9 +62,16 @@ public class RomanNumbersTest {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("III", romanNumbersConvertor.convertNumber(3));
     }
+
     @Test
     public void should_return_VI_when_input6() throws Exception {
         final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
         Assert.assertEquals("VI", romanNumbersConvertor.convertNumber(6));
+    }
+
+    @Test
+    public void should_return_IV_when_input4() throws Exception {
+        final RomanNumbersConvertor romanNumbersConvertor = new RomanNumbersConvertor();
+        Assert.assertEquals("IV", romanNumbersConvertor.convertNumber(4));
     }
 }
